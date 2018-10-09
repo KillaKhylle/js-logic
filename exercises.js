@@ -118,7 +118,7 @@ if(wordlength ===3){
   return "Word to Big Bird!";
   }
 }
-console.log
+console.log("Test")
 console.log("bigBird: ", bigBird("Cat"));
 /*
  * #6
