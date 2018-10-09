@@ -2,7 +2,6 @@
 If statements - Evaluates (or checks) a condition. If the condition is true, any statements in the subsequent code block are executed
 */
 /*var today = new Date();
-
 if(today === "Friday"){
   return "Let's Party!";
 };*/
@@ -32,9 +31,11 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
 function canVote(age){
   if(age >= 18){
     return true;
+  }else{
+    return false;
   }
 }
-console.log('can vote results', canVote(18));
+console.log("1. canVote: ", canVote(19));
 
 /*
  * #2
@@ -48,6 +49,12 @@ console.log('can vote results', canVote(18));
  * Console.log your result.
 */
 
+function login(password){
+  if(password === "test1234"){
+   return "Login Success!";
+  }
+ }
+ console.log(login("test1234"));
 
 /*
  * #3
@@ -62,7 +69,15 @@ console.log('can vote results', canVote(18));
  * Console.log your result.
 */
 
+function isGreaterThan(first, second){
+  if(first > second){
+    return true;
+  }
+}
+console.log(isGreaterThan(3, 1));
 
+var showResult = isGreaterThan(5, 1);
+console.log("isGreaterThan: ", showResult);
 
 /*
  * #4
@@ -76,7 +91,15 @@ console.log('can vote results', canVote(18));
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+  if(boo === true){
+    return true;
+  }else{
+    return false;
+  }
 
+}
+console.log("mustBeTrue: ", mustBeTrue(true));
 
 /*
  * #5
@@ -90,8 +113,13 @@ console.log('can vote results', canVote(18));
  * Console.log your result.
 */
 
+function bigBird (word){
+if(wordlength ===3){
+  return "Word to Big Bird!";
+  }
+}
 
-
+console.log("bigBird: ", bigBird("Cat"));
 /*
  * #6
  * Function - isEqual
@@ -229,9 +257,7 @@ Inside the function, create a switch statement that will check the daily special
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
-
 The for loop is made up for 3 parts:
-
 1) Initialization (i.e. var i = 0;)
 2) Condition (i.e. i<arr.length;)
 3) Update (i.e. i++)
@@ -320,16 +346,3 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
- 
-  
-  
-
-
-
-
-
-
-
-
-
-
